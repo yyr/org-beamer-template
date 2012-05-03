@@ -1,0 +1,53 @@
+#+TITLE: Title
+#+AUTHOR: Yagnesh Raghava Yakkala
+#+EMAIL: yagnesh@live.com
+#+DATE: \today
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation]
+#+STARTUP: beamer
+#+BEAMER_FRAME_LEVEL: 2
+#+BEAMER_HEADER_EXTRA: \usetheme{CambridgeUS}\usecolortheme{default}
+#+COLUMNS: %35ITEM %8BEAMER_envargs(Env) %10BEAMER_envargs(Env Args) %4BEAMER_col(Col) %8BEAMER_extra(Extra)
+#+OPTIONS: tags:nil
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+* Templates
+** with
+#+ATTR_LATEX: width=0.10cm
+#+CAPTION:
+[[file:path/to/fig.jpg]]
+** one fig with bullets                                           :B_columns:
+:PROPERTIES:
+:BEAMER_env: columns
+:END:
+*** 0.4                                                          :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:END:
+- bullet one
+- bullet two
+*** 0.6                                                          :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:END:
+#+ATTR_LATEX: width=0.80\textwidth
+#+CAPTION:
+[[file:path/to/fig.jpg]]
+** two figs                                                       :B_columns:
+:PROPERTIES:
+:BEAMER_env: columns
+:END:
+*** 0.5                                                            :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:END:
+#+ATTR_LATEX: width=0.80\textwidth
+[[file:path/to/fig.jpg]]
+*** 0.5                                                            :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:END:
+#+ATTR_LATEX: width=0.80\textwidth
+[[file:path/to/fig.jpg]]
+
+* Notes                                                            :noexport:
