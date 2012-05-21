@@ -3,7 +3,7 @@
 #+EMAIL: yagnesh@live.com
 #+DATE: \today
 #+LaTeX_CLASS: beamer
-#+LaTeX_CLASS_OPTIONS: [presentation]
+#+LaTeX_CLASS_OPTIONS:  [10pt]
 #+STARTUP: beamer
 #+BEAMER_FRAME_LEVEL: 2
 #+BEAMER_HEADER_EXTRA: \usetheme{CambridgeUS}\usecolortheme{default}
@@ -12,7 +12,7 @@
 #+EXPORT_EXCLUDE_TAGS: noexport
 
 * Templates
-** with
+** with single figure
 #+ATTR_LATEX: width=0.10cm
 #+CAPTION:
 [[file:path/to/fig.jpg]]
