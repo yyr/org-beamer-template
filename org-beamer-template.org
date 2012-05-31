@@ -1,4 +1,4 @@
-#+TITLE: Title
+#+TITLE: Org-Mode Beamer Ready Templates
 #+AUTHOR: Yagnesh Raghava Yakkala
 #+EMAIL: yagnesh@live.com
 #+DATE: \today
@@ -11,12 +11,15 @@
 #+OPTIONS: tags:nil
 #+EXPORT_EXCLUDE_TAGS: noexport
 
-* Templates
-** with single figure
-#+ATTR_LATEX: width=0.10cm
+* Plain
+** Place a figure
+\centering
+#+ATTR_LATEX: width=0.75\textwidth
 #+CAPTION:
 [[file:path/to/fig.jpg]]
-** one fig with bullets                                           :B_columns:
+
+* Two Columns
+** one figures with bullets                                       :B_columns:
 :PROPERTIES:
 :BEAMER_env: columns
 :END:
@@ -30,10 +33,10 @@
 :PROPERTIES:
 :BEAMER_env: column
 :END:
-#+ATTR_LATEX: width=0.80\textwidth
+#+ATTR_LATEX: width=0.90\textwidth
 #+CAPTION:
 [[file:path/to/fig.jpg]]
-** two figs                                                       :B_columns:
+** Two figures in one frame                                       :B_columns:
 :PROPERTIES:
 :BEAMER_env: columns
 :END:
@@ -41,13 +44,48 @@
 :PROPERTIES:
 :BEAMER_env: column
 :END:
-#+ATTR_LATEX: width=0.80\textwidth
+#+ATTR_LATEX: width=0.90\textwidth
 [[file:path/to/fig.jpg]]
 *** 0.5                                                            :B_column:
 :PROPERTIES:
 :BEAMER_env: column
 :END:
-#+ATTR_LATEX: width=0.80\textwidth
+#+ATTR_LATEX: width=0.90\textwidth
 [[file:path/to/fig.jpg]]
+
+** another way to make two columns                                 :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:END:
+*** First col                                                         :BMCOL:
+:PROPERTIES:
+:BEAMER_col: .5
+:END:
+- first col
+- first col
+- first col
+- first col
+- first col
+
+*** Second col                                                        :BMCOL:
+:PROPERTIES:
+:BEAMER_col: .5
+:END:
+- second col
+- second col
+- second col
+- second col
+- second col
+
+* Split frame horizontally
+** this has four parts in it
+
+* Text Placing
+** place over head in slide
+
+* Conclusion
+** links
+[[http://orgmode.org][Emacs org-mode]] is fun
+** Tell me if you know more
 
 * Notes                                                            :noexport:
