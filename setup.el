@@ -12,7 +12,3 @@
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
-
-(setq org-e-latex-pdf-process
-      '("pdflatex -interaction nonstopmode %b"
-        "pdflatex -interaction nonstopmode %b"))
